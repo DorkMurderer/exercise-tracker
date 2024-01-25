@@ -1,0 +1,144 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+   
+}
+
+
+
+h2{
+    color: white;
+    text-shadow: rgb(252, 221, 247) 1px 0 10px;
+    text-decoration: underline;
+    font-family: cursive;
+}
+
+body{
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.pinimg.com/1200x/44/1b/dc/441bdc8fdd63b330efffa33773b97d80.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  
+}
+
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+  
+}
+.tracker {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+.tracker,
+.tracker * {
+  font-family: sans-serif;
+}
+
+.tracker th {
+    font-size: 1.15em;
+    text-align: left;
+    font-weight: normal;
+    color: white;
+    background-color: #FFD1DC;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+.tracker th,
+.tracker td {
+    padding: 0.75em;
+}
+
+
+.tracker__entries .tracker__row {
+    background: #eeeeee;
+}
+
+.tracker__entries .tracker__row:nth-child(odd){
+    background: #dddddd;
+}
+
+.tracker__date,
+.tracker__workout,
+.tracker__duration{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 2.5em;
+    padding: 0.5em 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.tracker__duration{
+    text-align: right;
+    width: 5em;
+}
+
+.tracker__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+    color: red;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 0.5em;
+    transition: ease-in-out 0.5s;
+    border-radius: 50%;
+}
+
+.tracker__button:hover{
+    background-color: rgba(0, 0, 0, 0.168);
+}
+
+.tracker__row--add{
+   border-top: 3px solid #333333;
+   border-bottom: 3px solid #333333;
+   background-color: #ffffff;
+}
+
+
+.tracker__row--add td{
+    text-align: right;
+}
+
+.tracker__add{
+    display: inline-block;
+    padding: 0.8em 1em;
+    color: green;
+    cursor: pointer;
+}
+
+.tracker__add:hover{
+  background-color:  rgba(0, 0, 0, 0.208);
+}
+
+@media screen and (max-width:450px) {
+    #app {
+        width: 400px;
+
+    }
+
+    h2{
+      margin-top: 20px;
+        margin-left: 30px;
+        font-size: 15px
+    }
+}
